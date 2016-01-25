@@ -9,17 +9,18 @@
 
 var school = {
   name: "General Assembly",
-  founded: 2011
+  yearFounded: 2011
 }
 
 /* Access the 'name' property of 'school' in two different ways. */
 
-console.log('The school was founded in ' + school.founded);
-console.log('The school was founded in ' + school['founded']);
+console.log('The school was founded in ' + school.yearFounded);
+console.log('The school was founded in ' + school['yearFounded']);
 
 /* Discuss with your group a situation where one of these
      ways would be preferable over the other way. */
 
+// ANSWER: When the property name is stored in a variable or passed as an argument
 
 /* Add a property 'founders' to 'school' using one of the two ways
      above. The founders of General Assembly are Jake Schwartz,
@@ -206,7 +207,6 @@ console.log('name.length = ' + name.length);
      methods and properties on primitive types which are not
      objects. */
 
-
 /************************
  *  CONSTRUCTORS
  ************************/
@@ -214,7 +214,7 @@ console.log('name.length = ' + name.length);
 /* Now, rather than using object literals, where you're literally defining an object,
      build a constructor to generate Person objects for us! */
 
-function Person(name){
+function Person(name) {
     this.name = name;
 }
 
@@ -250,26 +250,26 @@ console.log(melody.status());
         that tells us whether the school is open or closed,
         and two methods that open & close the school. */
 
-function Company(name, founded, founders) {
+function School(name, founded, founders) {
   this.name = name;
   this.founded = founded;
   this.founders = founders;
   this.isOpen = true;
 }
 
-Company.prototype.numFounders = function() {
+School.prototype.numFounders = function() {
   return this.founders.length;
 }
 
-Company.prototype.open = function() {
+School.prototype.open = function() {
   this.isOpen = true;
 }
 
-Company.prototype.close = function() {
+School.prototype.close = function() {
   this.isOpen = false;
 }
 
-var ga = new Company('General Assembly',
+var ga = new School('General Assembly',
                      2011,
                      [ 'Jake Schwartz',
                        'Adam Pritzker',
