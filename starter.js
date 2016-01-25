@@ -74,8 +74,7 @@ null;
      Within the function, you can actually have multiple
      return statements in different parts of the logic! */
 
-function greaterThan(num1, num2)
-{
+function greaterThan(num1, num2) {
   if (null) {
     return null;
   } else {
@@ -106,7 +105,6 @@ null;
 null;
 
 
-
 /* Write a function 'abs' which accepts one parameter.
      This function returns the absolute value of the number,
      without using Math.abs. (If the number is positive,
@@ -121,8 +119,7 @@ null;
      of the two numbers, without using Math.min.
    For example, min(2, 3) => 2. min(3, 2) => 2. */
 
- function null
- {
+ function null {
   return null;
  }
 
