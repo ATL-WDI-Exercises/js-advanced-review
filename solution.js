@@ -1,15 +1,5 @@
 'use strict';
 
-// Advanced JavaScript Review Lab
-//   Working as a team, replace the null values
-//     with JavaScript that completes the task.
-//
-// For each challenge, copy and paste it into
-//   a browser's console. Make it work inside
-//   the console. Then, put the working version
-//   into this file!
-
-
 /************************
  *  BASIC OBJECTS
  ************************/
